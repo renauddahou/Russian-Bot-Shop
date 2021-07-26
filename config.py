@@ -1,6 +1,6 @@
 name = "text"
-token = "text"
-admin_id = 123456789
+token = "1897550776:AAEedZUqU66DKQYWXUq0m60DqepSyTeYFQY"
+admin_id = 870305559
 channel = "text"
 op = "text"
 token_qiwi = 'text'
