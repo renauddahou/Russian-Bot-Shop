@@ -8,5 +8,5 @@ python-telegram-bot
 requests
 six
 telegram
-urllib3
+urllib
 pytelegrambotapi
