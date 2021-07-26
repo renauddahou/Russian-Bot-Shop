@@ -11,3 +11,4 @@ telegram
 urllib3
 pytelegrambotapi
 mine
+SimpleQIWI
