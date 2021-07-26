@@ -38,15 +38,15 @@ def send_welcome(message):
         joinedUsers.add(str(message.chat.id))
         print("\nБот был запущен. ID: "+str(message.chat.id)+'    Дата/время: '+str(datetime.now()))
         bot.send_message(message.chat.id, "Добро пожаловать в RatHouse❗️\n\n◼️ Здесь ты можешь воспользоваться всеми возможными теневыми услугами\n\n◼️ Хочешь научиться работать по-черному, но у тебя нет нужных материалов - ты попал по адресу!\n\n◼️ В RatHouse присутствует доска объявлений о поиске сотрудников, а также реферальная система с помощью которых вы сможете заработать\n\n◼️ Огромный выбор услуг и товаров")
-        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup=/start)
+        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup="start")
     elif message.chat.id == config.admin_id:
         print("\nБот был запущен. ID: "+str(message.chat.id)+'    Дата/время: '+str(datetime.now()))
         bot.send_message(message.chat.id, "Добро пожаловать в RatHouse❗️\n\n◼️ Здесь ты можешь воспользоваться всеми возможными теневыми услугами\n\n◼️ Хочешь научиться работать по-черному, но у тебя нет нужных материалов - ты попал по адресу!\n\n◼️ В RatHouse присутствует доска объявлений о поиске сотрудников, а также реферальная система с помощью которых вы сможете заработать\n\n◼️ Огромный выбор услуг и товаров")
-        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup=/admibro)
+        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup="admibro")
     else:
         print("\nБот был запущен. ID: "+str(message.chat.id)+'    Дата/время: '+str(datetime.now()))
         bot.send_message(message.chat.id, "Добро пожаловать в RatHouse❗️\n\n◼️ Здесь ты можешь воспользоваться всеми возможными теневыми услугами\n\n◼️ Хочешь научиться работать по-черному, но у тебя нет нужных материалов - ты попал по адресу!\n\n◼️ В RatHouse присутствует доска объявлений о поиске сотрудников, а также реферальная система с помощью которых вы сможете заработать\n\n◼️ Огромный выбор услуг и товаров")
-        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup=mine.start)
+        bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup="start")
 
 
 @bot.message_handler(commands=["help"])
